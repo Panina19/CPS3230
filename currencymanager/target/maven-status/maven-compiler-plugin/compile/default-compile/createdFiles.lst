@@ -1,0 +1,7 @@
+edu\uom\currencymanager\currencies\Util.class
+edu\uom\currencymanager\currencies\CurrencyDatabase.class
+edu\uom\currencymanager\currencies\Currency.class
+edu\uom\currencymanager\CurrencyManager.class
+edu\uom\currencymanager\currencyserver\DefaultCurrencyServer.class
+edu\uom\currencymanager\currencies\ExchangeRate.class
+edu\uom\currencymanager\currencyserver\CurrencyServer.class

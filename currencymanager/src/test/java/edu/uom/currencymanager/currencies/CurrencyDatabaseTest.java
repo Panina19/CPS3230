@@ -1,6 +1,7 @@
 package edu.uom.currencymanager.currencies;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -131,11 +132,23 @@ public class CurrencyDatabaseTest {
     }
 
     @Test
-    public void TestInvalidCurrencyGetExchangeRate() throws Exception {
+    public void TestInvalidSourceCurrencyGetExchangeRate() throws Exception {
         try {
             String invalidCurrCode = "QWE";
             currencyDB.addCurrency(curr1);
             currencyDB.getExchangeRate(invalidCurrCode, currCode1);
+        } catch (Exception e) {
+            assertEquals("Unkown currency: QWE", e.getMessage());
+        }
+        currencyDB.deleteCurrency(currCode1);
+    }
+
+    @Test
+    public void TestInvalidDestCurrencyGetExchangeRate() throws Exception {
+        try {
+            String invalidCurrCode = "QWE";
+            currencyDB.addCurrency(curr1);
+            currencyDB.getExchangeRate(currCode1, invalidCurrCode);
         } catch (Exception e) {
             assertEquals("Unkown currency: QWE", e.getMessage());
         }
@@ -176,4 +189,5 @@ public class CurrencyDatabaseTest {
         currencyDB.deleteCurrency(currCode1);
         currencyDB.deleteCurrency(currCode2);
     }
+
 }
