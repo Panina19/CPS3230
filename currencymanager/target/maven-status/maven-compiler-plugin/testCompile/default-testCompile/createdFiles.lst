@@ -1,0 +1,10 @@
+edu\uom\currencymanager\CurrencyManagerTest.class
+edu\uom\currencymanager\currencies\CurrencyDatabaseTest$1.class
+edu\uom\currencymanager\currencies\CurrencyDatabaseTest$4.class
+edu\uom\currencymanager\currencies\CurrencyDatabaseTest.class
+edu\uom\currencymanager\currencyserver\DefaultCurrencyServerTest.class
+edu\uom\currencymanager\currencies\CurrencyTest.class
+edu\uom\currencymanager\currencies\ExchangeRateTest.class
+edu\uom\currencymanager\currencies\CurrencyDatabaseTest$3.class
+edu\uom\currencymanager\currencies\CurrencyDatabaseTest$2.class
+edu\uom\currencymanager\currencies\UtilTest.class
